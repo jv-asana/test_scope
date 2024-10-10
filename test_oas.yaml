@@ -8618,7 +8618,9 @@ paths:
       - $ref: '#/components/parameters/pretty'
     get:
       summary: Get an attachment
-      description: Get the full record for a single attachment.
+      description: |- 
+        Get the full record for a single attachment.
+        ------------------------------------------------------------------------
       tags:
         - Attachments
       operationId: getAttachment
