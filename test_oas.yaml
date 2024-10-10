@@ -8620,7 +8620,11 @@ paths:
       summary: Get an attachment
       description: |- 
         Get the full record for a single attachment.
-        ------------------------------------------------------------------------
+        | Month    | Savings |
+        | -------- | ------- |
+        | January  | $250    |
+        | February | $80     |
+        | March    | $420    |
       tags:
         - Attachments
       operationId: getAttachment
