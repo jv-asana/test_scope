@@ -4042,24 +4042,9 @@ components:
                   description: |-
                     *Deprecated: new integrations should prefer the `current_status_update` resource.*
 
-                    *Requires scope:* `project_status_updates:read`
-
-                    <p><strong><span style="color:red">Requires scope:</span></strong> <code class="rdmd-code lang- theme-light" data-lang="" name="" tabindex="0"><span class="cm-s-neo" data-testid="SyntaxHighlighter">project_status_updates:read</span></code></p>
-
                     <p>
                       <strong>
-                        <span style="color: blue;">Requires scope:</span>
-                      </strong>
-                      <code class="rdmd-code lang- theme-light" data-lang="" name="" tabindex="0">
-                        <span class="cm-s-neo" data-testid="SyntaxHighlighter">
-                          project_status_updates:read
-                        </span>
-                      </code>
-                    </p>
-
-                    <p>
-                      <strong>
-                        <span style="color: red;">Requires scope:</span>
+                        <span style="color: blue;">Full object requires scope:</span>
                       </strong>
                       <code>project_status_updates:read</code>
                     </p>
@@ -15993,26 +15978,27 @@ paths:
       description: |-
         Returns the complete project record for a single project.
 
+
+        <b>Required scope: </b><code>projects:read</code>
+
+        To access the full object in these fields, addtional scopes are required:
+
         <table>
           <tr>
               <th>Field</th>
               <th>Required Scope</th>
           </tr>
           <tr>
-              <td>`current_status_update`</td>
-              <td>`project_status_updates:read`</td>
+              <td><code>custom_fields</code></td>
+              <td><code>custom_fields:read</code></td>
           </tr>
           <tr>
-              <td>`status_update` (deprecated)</td>
-              <td>`project_status_updates:read`</td>
+              <td><code>custom_field_settings</code></td>
+              <td><code>custom_fields:read</code></td>
           </tr>
           <tr>
-              <td>`custom_fields`</td>
-              <td>`custom_fields:read`</td>
-          </tr>
-          <tr>
-              <td>`custom_field_settings`</td>
-              <td>`custom_fields:read`</td>
+              <td><code>status_update</code> (deprecated)</td>
+              <td><code>project_status_updates:read</code></td>
           </tr>
         </table>
       tags:
